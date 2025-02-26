@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="stylesheet" href="r.html"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقة أسئلة كروية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background: #0056b3;
+        }
+        .quiz-container {
+            text-align: right;
+            padding: 20px;
+        }
+        .question {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+        section {
+            padding-top: 50px;
+        }
+        iframe {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>مسابقة أسئلة كروية</h1>
+</header>
+
+<div class="container" id="home">
+    <h2>الصفحة الرئيسية</h2>
+    <p>مرحبًا بك في أكبر تحدٍ لعشاق كرة القدم! هل لديك المعلومات الكافية لتكون بطل المسابقة؟</p>
+    <div class="nav">
+        <a href="r.html">الرئيسية</a>
+        <a href="#quiz">التحدي</a>
+        <a href="#video">فيديو تعليمي</a>
+    </div>
+</div>
+
+<div class="container quiz-container" id="quiz">
+    <h2>تحدي الأسئلة</h2>
+    <form>
+        <div class="question">من هو اللاعب الذي سجل أكبر عدد من الأهداف في تاريخ كأس العالم؟</div>
+        <input type="text" name="q1" required>
+
+        <div class="question">أي فريق فاز بكأس العالم 2018؟</div>
+        <input type="text" name="q2" required>
+
+        <div class="question">من هو أفضل لاعب في العالم لعام 2021؟</div>
+        <input type="text" name="q3" required>
+
+        <button type="submit" class="submit-btn">إرسال الإجابات</button>
+    </form>
+</div>
+
+<div class="container" id="video">
+    <h2>فيديو تعليمي</h2>
+    <p>شاهد الفيديو التالي لمعرفة المزيد عن المسابقة وكيفية المشاركة:</p>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DkhTOA9eR_4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
